@@ -1,0 +1,28 @@
+package recursion;
+//BACKTRACK
+import java.util.Scanner;
+
+public class Que3 {
+    class BackTrack{
+    static void backtrack(int i,int n) {
+    	     if(i<1) {
+    	    	 return;
+    	     }
+    	     backtrack(i-i,n);
+    	     
+    	     System.out.println(i);
+    }
+    
+    }
+	public static void main(String[] args) {
+		Scanner in= new Scanner(System.in);
+		System.out.println("Enter number");
+		int n=in.nextInt();
+		System.out.println("Here we go>>");
+       BackTrack.backtrack(n,n);
+       System.out.println("Thank you!");
+       
+
+	}
+
+}
